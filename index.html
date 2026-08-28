@@ -19,7 +19,7 @@
         <a class="navbar-a" href="#home">Home</a>
         <a class="navbar-a" href="#about">About me</a>
         <a class="navbar-a" href="#background">Background</a>
-        <a class="navbar-a" href="#skills">Skills</a>   
+        <a class="navbar-a" href="#skills">Skills</a>
         <a class="navbar-a" href="#contact">Contacts</a>
         <a class="navbar-a" href="#more">More...</a>
     </nav>
@@ -109,7 +109,8 @@
 
                 <div class="background-mid-left">
                     <p class="title">Hobby</p>
-                    <p>Movie, Video game, Music, Video Editing, Photographing, Badminton, Football, Hiking, Swimming,...</p>
+                    <p>Movie, Video game, Music, Video Editing, Photographing, Badminton, Football, Hiking, Swimming,...
+                    </p>
                 </div>
 
                 <div class="background-bot-left">
@@ -201,7 +202,7 @@
         <div class="skills-container">
             <div class="skills-group">
                 <p class="title">Hard Skills</p>
-                
+
                 <div class="skill-item">
                     <div class="skill-info">
                         <span class="skill-name">Web Developer</span>
@@ -275,7 +276,7 @@
 
             <div class="skills-group">
                 <p class="title">Soft Skills</p>
-                
+
                 <div class="skill-item">
                     <div class="skill-info">
                         <span class="skill-name">Creative thinking</span>
@@ -371,8 +372,89 @@
         </div>
     </section>
 
+
+    <!--doan nay vibe code-->
     <section id="more">
-        <p class="title m">There are no more... (i dont any good book ;-; )</p>
+        <p class="title">Suggest something to you</p>
+
+        <!-- Slider Wrapper (Khung chứa Card + Mũi tên trái/phải) -->
+        <div class="slider-wrapper">
+            <!-- Nút mũi tên Trái -->
+            <button class="nav-btn prev-btn"
+                onclick="document.querySelector('.slider-box').scrollBy({left: -650, behavior: 'smooth'})">&#10094;</button>
+
+            <!-- Khung chứa Card Slide -->
+            <div class="slider-box">
+                <!-- Slide 1 -->
+                <div class="slide-card">
+                    <img src="https://m.media-amazon.com/images/M/MV5BNjQxZGNmYjktY2NhYi00NjM4LWI2MTMtYjViZWYwNjhmMGExXkEyXkFqcGc@._V1_FMjpg_UX800_.jpg" class="slide-img" alt="Interstellar">
+                    <div class="slide-info">
+                        <h3 class="slide-title">Interstellar (2014)</h3>
+                        <span class="slide-director">Christopher Nolan</span>
+                        <span class="slide-category">Sci-Fi / Adventure</span>
+                        <p class="slide-desc">
+                            When Earth becomes uninhabitable, a team of ex-NASA pilots travel through a wormhole near
+                            Saturn in search of a new home for mankind.
+                        </p>
+                        <p class="slide-desc opinion">
+                            My opinion: phim hay vl khong biet noi j, khong xem thi qua la phi
+                        </p>
+                        <a href="http://www.imdb.com/title/tt0816692/" class="slide-link">Learn more</a>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="slide-card">
+                    <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX700_.jpg" class="slide-img" alt="Inception">
+                    <div class="slide-info">
+                        <h3 class="slide-title">Inception (2010)</h3>
+                        <span class="slide-director">Christopher Nolan</span>
+                        <span class="slide-category">Sci-Fi / Action</span>
+                        <p class="slide-desc">
+                            A thief who steals corporate secrets through the use of dream-sharing technology is given
+                            the inverse task of planting an idea into the mind of a C.E.O.
+                        </p>
+                        <p class="slide-desc opinion">
+                            My opinion: phim hay vl khong biet noi j, khong xem thi qua la phi
+                        </p>
+                        <a href="https://www.imdb.com/title/tt1375666/" class="slide-link">Learn more</a>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="slide-card">
+                    <img src="https://m.media-amazon.com/images/M/MV5BN2JkMDc5MGQtZjg3YS00NmFiLWIyZmQtZTJmNTM5MjVmYTQ4XkEyXkFqcGc@._V1_FMjpg_UY3454_.jpg" class="slide-img" alt="Oppenheimer">
+                    <div class="slide-info">
+                        <h3 class="slide-title">Oppenheimer (2023)</h3>
+                        <span class="slide-director">Christopher Nolan</span>
+                        <span class="slide-category">Biography / Drama</span>
+                        <p class="slide-desc">
+                            The story of American scientist J. Robert Oppenheimer and his role in the development of the
+                            atomic bomb during World War II.
+                        </p>
+                        <p class="slide-desc opinion">
+                            My opinion: phim hay vl khong biet noi j, khong xem thi qua la phi
+                        </p>
+                        <a href="https://www.imdb.com/title/tt15398776/" class="slide-link">Learn more</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nút mũi tên Phải -->
+            <button class="nav-btn next-btn"
+                onclick="document.querySelector('.slider-box').scrollBy({left: 650, behavior: 'smooth'})">&#10095;</button>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <div class="gallery-container">
+            <img src="img/Picsart_26-02-04_23-43-24-291.jpg" alt="xamxam" class="img-box">
+            <p class="gallery-desc">May con ga</p>
+        </div>
+    </section>
+
+    <section class="ending">
+        <p class="end">Thank you</p>
     </section>
 
 </body>
