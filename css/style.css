@@ -663,3 +663,256 @@ section {
     width: 100%;
     min-height: 100vh;
 }
+
+/* ==========================================
+   MOBILE & TABLET RESPONSIVE STYLES (<= 768px)
+   ========================================== */
+@media (max-width: 768px) {
+    /* 1. Tắt scroll snap cứng trên di động để không bị trôi/che mất chữ */
+    html {
+        scroll-snap-type: none;
+    }
+
+    section {
+        min-height: auto;
+        padding-top: 70px;
+        padding-bottom: 40px;
+        scroll-snap-align: none;
+    }
+
+    /* 2. Thanh điều hướng Navbar */
+    .navbar {
+        padding: 10px 8px;
+        gap: 10px 14px;
+        flex-wrap: wrap;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    .navbar-a {
+        font-size: 13px;
+    }
+
+    /* 3. Section #home */
+    #home {
+        min-height: 100vh;
+        position: relative;
+        padding-top: 80px;
+    }
+
+    #portfolio {
+        position: relative;
+        top: auto;
+        left: auto;
+        font-size: 55px;
+        margin: 0 0 20px 0;
+    }
+
+    #name {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        width: 90%;
+        font-size: 20px;
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 8px;
+    }
+
+    /* 4. Section #about */
+    #about {
+        padding-top: 70px;
+    }
+
+    #about-me-picture {
+        height: 28vh;
+        min-height: 180px;
+    }
+
+    #ab {
+        font-size: 44px;
+        align-items: center;
+    }
+
+    .title-line {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .about-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 20px 5%;
+    }
+
+    .about-left-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    #p-list {
+        max-width: 100%;
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    #bio {
+        text-align: center;
+    }
+
+    .about-right {
+        text-align: center;
+    }
+
+    /* 5. Section #background */
+    .background-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px 5%;
+    }
+
+    .background-mid-left p:not(.title) {
+        font-size: 15px;
+    }
+
+    /* Ảnh xem trước chứng chỉ trên điện thoại: hiện ngay bên dưới khi tap/hover */
+    .cert-preview-img {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        transform: none !important;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .item-card.cert-hover:hover .cert-preview-img,
+    .item-card.cert-hover:focus .cert-preview-img {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* 6. Section #skills */
+    .skills-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 20px 5%;
+    }
+
+    /* 7. Section #contact */
+    #contact {
+        height: auto;
+        min-height: 100vh;
+        padding: 70px 5% 40px 5%;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-img {
+        height: 180px;
+    }
+
+    /* 8. Section #more (Suggestions / Slider) */
+    #more {
+        height: auto;
+        min-height: 100vh;
+        padding: 70px 5% 40px 5%;
+    }
+
+    .slider-wrapper {
+        max-height: none;
+        flex-direction: column;
+    }
+
+    .nav-btn {
+        display: none; /* Vuốt bằng tay (touch swipe) tự nhiên trên điện thoại */
+    }
+
+    .slide-card {
+        flex-direction: column;
+        padding: 25px 20px 60px 20px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .slide-img {
+        width: 160px;
+        height: 230px;
+    }
+
+    .slide-info {
+        text-align: center;
+        align-items: center;
+        padding-bottom: 0;
+    }
+
+    .slide-link {
+        position: relative;
+        bottom: auto;
+        right: auto;
+        margin-top: 15px;
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    /* 9. Section .gallery & .ending */
+    .gallery {
+        padding: 40px 5%;
+    }
+
+    .gallery-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .img-box {
+        width: 100%;
+        max-width: 320px;
+        height: auto;
+        margin: 0;
+    }
+
+    .gallery-desc {
+        text-align: center;
+    }
+
+    .ending {
+        min-height: 40vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .end {
+        font-size: 55px;
+        transform: none;
+    }
+}
+
+/* Màn hình điện thoại nhỏ (<= 480px) */
+@media (max-width: 480px) {
+    #portfolio {
+        font-size: 40px;
+    }
+
+    #name {
+        font-size: 17px;
+    }
+
+    #ab {
+        font-size: 34px;
+    }
+
+    .navbar {
+        gap: 6px 10px;
+        padding: 8px 4px;
+    }
+
+    .navbar-a {
+        font-size: 12px;
+    }
+}
