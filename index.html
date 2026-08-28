@@ -381,7 +381,7 @@
         <div class="slider-wrapper">
             <!-- Nút mũi tên Trái -->
             <button class="nav-btn prev-btn"
-                onclick="document.querySelector('.slider-box').scrollBy({left: -650, behavior: 'smooth'})">&#10094;</button>
+                onclick="document.querySelector('.slider-box').scrollBy({left: -document.querySelector('.slider-box').clientWidth, behavior: 'smooth'})">&#10094;</button>
 
             <!-- Khung chứa Card Slide -->
             <div class="slider-box">
@@ -442,7 +442,7 @@
 
             <!-- Nút mũi tên Phải -->
             <button class="nav-btn next-btn"
-                onclick="document.querySelector('.slider-box').scrollBy({left: 650, behavior: 'smooth'})">&#10095;</button>
+                onclick="document.querySelector('.slider-box').scrollBy({left: document.querySelector('.slider-box').clientWidth, behavior: 'smooth'})">&#10095;</button>
         </div>
     </section>
 
